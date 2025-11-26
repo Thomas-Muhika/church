@@ -1,2 +1,67 @@
 
 /*# sourceMappingURL=custom.min.css.map */
+.mx-auto-right{
+    margin-right: auto !important;
+}
+
+/* ***********************
+GIVING BUTTON
+*********************** */
+.giving-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+/* container for individual stars */
+.giving-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%; /* left half */
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* show container on hover */
+.giving-btn:hover::before {
+    opacity: 1;
+}
+
+/* create individual stars with ::after pseudo-elements */
+.giving-btn span.star {
+    position: absolute;
+    font-size: 12px;
+    background: linear-gradient(90deg, #FFD700, #FFB300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.2;
+    pointer-events: none;
+    animation: twinkle 1.6s infinite;
+}
+
+/* twinkle animation */
+@keyframes twinkle {
+    0%   { opacity: 0.2; transform: scale(0.9); }
+    50%  { opacity: 1;   transform: scale(1.15); }
+    100% { opacity: 0.2; transform: scale(0.9); }
+}
+
+/* ***********************
+OVERIDE CONTAINER SIZE
+*********************** */
+.navbar .container {
+    max-width: 95% !important;
+}
+.hero-section .container {
+    max-width: 100% !important;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* optional depending on what you want */
+}
+
