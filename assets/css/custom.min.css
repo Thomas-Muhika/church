@@ -1,5 +1,13 @@
 
 /*# sourceMappingURL=custom.min.css.map */
+/* ***********************
+HERO SECTION
+*********************** */
+.caption-hero{
+    bottom: 10rem;
+}
+
+
 .mx-auto-right{
     margin-right: auto !important;
 }
