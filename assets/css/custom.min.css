@@ -21,8 +21,12 @@ NAVIGATION SECTION
     color: #000;
 }
 
+.contact-link{
+    font-size: 16px;
+}
+
 .contact-link:hover{
-    color: var(--vz-church-accent) !important
+    color: var(--vz-church-accent) !important;
 }
 
 
