@@ -21,6 +21,10 @@ NAVIGATION SECTION
     color: #000;
 }
 
+.contact-link:hover{
+    color: var(--vz-church-accent) !important
+}
+
 
 .mx-auto-right{
     margin-right: auto !important;
