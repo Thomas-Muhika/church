@@ -7,6 +7,20 @@ HERO SECTION
     bottom: 10rem;
 }
 
+/* ***********************
+NAVIGATION SECTION
+*********************** */
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove extra spacing */
+}
+
+/* Make the toggle look active on hover */
+.nav-item.dropdown:hover > .nav-link {
+    color: #000;
+}
+
 
 .mx-auto-right{
     margin-right: auto !important;
