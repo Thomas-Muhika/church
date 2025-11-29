@@ -125,7 +125,7 @@
 
                     <div class="">
                         <a href="#contact" class="btn btn-link fw-medium text-decoration-none text-body contact-link">Get in Touch</a>
-                        <a href="#" class="btn btn-primary giving-btn">
+                        <a href="#" class="btn btn-primary giving-btn" data-bs-target=".bs-example-modal-xl" data-bs-toggle="modal" type="button">
                             Giving
                             <span class="star" style="left:5%;  top:45%; animation-delay:0s;">✦</span>
                             <span class="star" style="left:15%; top:30%; animation-delay:0.3s;">✧</span>
@@ -133,7 +133,6 @@
                             <span class="star" style="left:35%; top:40%; animation-delay:1.1s;">✧</span>
                             <span class="star" style="left:45%; top:55%; animation-delay:1.4s;">✦</span>
                         </a>
-
                     </div>
                 </div>
 
@@ -1990,6 +1989,86 @@
     </div>
     <!-- end layout wrapper -->
 
+    <!--  Extra Large modal example -->
+    <div aria-hidden="true" aria-labelledby="myExtraLargeModalLabel" class="modal fade bs-example-modal-xl" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="gallery-container">
+                                <a class="image-popup" href="assets/images/small/img-1.jpg" title="">
+                                    <img class="gallery-img img-fluid mx-auto" src="assets/images/small/img-1.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <h6 class="fs-16 my-3">Thank you for your generous giving.</h6>
+                            <div class="d-flex mt-2">
+                                <div class="flex-grow-1 ms-2 ">
+                                    <p class="text-muted mb-0">Your contribution helps support the ministry,
+                                        outreach programs, and the work God is doing through our church. <br/>
+                                        We deeply appreciate your sacrifice and commitment.<br/><br/>
+                                        May God bless you abundantly as you give.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="modal-content" style="height: 663px;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myExtraLargeModalLabel"><i class=" ri-shield-star-fill text-success"></i> Secure Donation</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="fs-15">Give your text a good structure</h6>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class=" ri-shield-star-fill text-success"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                    <p class="text-muted mb-0">Raw denim you probably
+                                        haven't heard of them jean shorts Austin.
+                                        Nesciunt tofu stumptown aliqua, retro synth
+                                        master cleanse.</p>
+                                </div>
+                            </div>
+
+                            <h6 class="fs-16 my-3">Graphic Design</h6>
+                            <div class="d-flex mt-2">
+                                <div class="flex-shrink-0">
+                                    <i class="ri-checkbox-circle-fill text-success"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2 ">
+                                    <p class="text-muted mb-0">Opposites attract, and
+                                        that’s a fact. It’s in our nature to be
+                                        interested in the unusual, and that’s why using
+                                        contrasting colors in Graphic Design is a must.
+                                        It’s eye-catching, it makes a statement, it’s
+                                        impressive graphic design. Increase or decrease
+                                        the letter spacing depending.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-link link-success fw-medium material-shadow-none" data-bs-dismiss="modal" href="javascript:void(0);">
+                                <i class="ri-close-line me-1 align-middle"></i>
+                                Close
+                            </a>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div>
+
+
+            </div>
+
+
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -2008,8 +2087,14 @@
     <!-- prismjs plugin -->
     <script src="assets/libs/prismjs/prism.js"></script>
 
+
+    !-- Modal Js -->
+<script src="assets/js/pages/modal.init.js"></script>
+
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+
 </body>
 
 </html>
