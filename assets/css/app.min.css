@@ -17527,6 +17527,7 @@ span.flatpickr-weekday {
     left: 0;
 }
 .navbar-landing {
+    background-color: var(--vz-secondary-bg);
     padding: 10px 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
