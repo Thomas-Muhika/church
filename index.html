@@ -319,15 +319,17 @@
                             <h3 class="mb-3 ff-secondary fw-semibold lh-base">Support Our Outreach</h3>
                         </div>
 
-                        <div class="col-xl-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body p-0"> <!-- remove padding so image touches edges -->
-                                    <img src="assets/images/giving/donate.png"
-                                         alt=""
-                                         class="img-fluid w-100 object-fit-cover rounded">
+                        <a href="" data-bs-target=".donate-modal" data-bs-toggle="modal">
+                            <div class="col-xl-12 col-md-12">
+                                <div class="card">
+                                    <div class="card-body p-0"> <!-- remove padding so image touches edges -->
+                                        <img src="assets/images/giving/donate.png"
+                                             alt=""
+                                             class="img-fluid w-100 object-fit-cover rounded">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                         <!--end col-->
                     </div>
@@ -1998,7 +2000,7 @@
     </div>
     <!-- end layout wrapper -->
 
-    <!--  Extra Large modal example -->
+    <!--  giving modal -->
     <div aria-hidden="true" aria-labelledby="myExtraLargeModalLabel" class="modal fade bs-example-modal-xl" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-xl">
 
@@ -2102,9 +2104,88 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <!--  giving modal -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- JAVASCRIPT -->
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div aria-hidden="true" aria-labelledby="myExtraLargeModalLabel" class="modal fade donate-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+
+            <div class="row h-100 align-items-stretch">
+                <div class="col-lg-6 d-flex">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="gallery-container">
+                                <img class="gallery-img img-fluid mx-auto" src="assets/images/giving/donate.png" alt="">
+                            </div>
+
+                            <h6 class="fs-16 my-3">Church building fundraising</h6>
+                            <div class="d-flex mt-2">
+                                <div class="flex-grow-1 ms-2 ">
+                                    <p class="text-muted mb-0">The Redemption Power House Ministry is planning to relocate to a new, larger ground to expand our outreach of the Gospel. <br/><br/>Thank you for supporting our ministry</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div>
+
+                <div class="col-lg-6 d-flex">
+                    <div class="modal-content flex-fill">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><i class=" ri-shield-star-fill text-success"></i> Secure Donation</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="gallery-container">
+                                <img class="gallery-img img-fluid mx-auto" src="assets/images/brands/mpesa-airtel.png" alt="">
+                            </div>
+                            <h6 class="fs-15 my-2">MPESA BUY GOODS</h6>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="ri-checkbox-circle-fill text-success"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                    <p class="text-muted mb-0">till number: 6883608</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="ri-checkbox-circle-fill text-success"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                    <p class="text-muted mb-0">till name: stella</p>
+                                </div>
+                            </div>
+
+                            <h6 class="fs-16 mt-3">Reach out via whatsapp</h6>
+                            <div class="text-sm-start mt-sm-0">
+                                <ul class="list-inline mb-0 footer-social-link">
+                                    <li class="list-inline-item">
+                                        <a href="https://wa.me/254727723030" target="_blank" class="avatar-xs d-block">
+                                            <div class="avatar-title rounded-circle text-success whatsapp-hover">
+                                                <i class="ri-whatsapp-fill ri-xl"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-link link-success fw-medium material-shadow-none" data-bs-dismiss="modal" href="javascript:void(0);">
+                                <i class="ri-close-line me-1 align-middle"></i>
+                                Close
+                            </a>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div>
+
+
+            </div>
+
+
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
