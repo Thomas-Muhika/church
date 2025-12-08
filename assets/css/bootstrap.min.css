@@ -1781,7 +1781,7 @@ progress {
         --vz-gutter-y: 3rem;
     }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1250px) {
     .col-xxl {
         -webkit-box-flex: 1;
         -ms-flex: 1 0 0px;
