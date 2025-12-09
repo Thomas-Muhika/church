@@ -10,16 +10,36 @@ HERO SECTION
 /* ***********************
 NAVIGATION SECTION
 *********************** */
-/* Show dropdown on hover */
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; /* remove extra spacing */
+/* Desktop hover dropdown */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+    .nav-item.dropdown:hover > .nav-link {
+        color: #000;
+    }
 }
 
-/* Make the toggle look active on hover */
-.nav-item.dropdown:hover > .nav-link {
-    color: #000;
+/* Fix mobile twitch — Stop Bootstrap from flipping/repositioning */
+.dropdown-menu {
+    transform: none !important;
+    inset: auto !important;
 }
+
+/* Force the Resources dropdown to anchor cleanly */
+#resourcesDropdown + .dropdown-menu {
+    left: 0 !important;
+    right: auto !important;
+}
+
+/* required for correct stacking */
+.nav-item.dropdown {
+    position: relative;
+}
+
+
 
 .contact-link{
     font-size: 16px;
