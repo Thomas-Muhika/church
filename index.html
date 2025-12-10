@@ -2129,24 +2129,32 @@
     <script src="assets/js/app.js"></script>
 
     <!-- Email JS contact form -->
-    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+
+    <!-- Load EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script>
-    (function() {
-        emailjs.init("O0jUabZeTi_zJx9LW"); // Replace with your Public Key
-    })();
+    document.addEventListener("DOMContentLoaded", function () {
+        emailjs.init({
+            publicKey: "O0jUabZeTi_zJx9LW"
+        });
 
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-        e.preventDefault(); // Stop page refresh
+        // Handle form submit
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
 
-        emailjs.sendForm("service_6i40u6k", "template_k98wdlc", this)
-            .then(function() {
-                alert("Message sent successfully!");
-            }, function(error) {
-                console.log(error);
-                alert("Failed to send message. Please try again.");
-            });
+            emailjs.sendForm("service_6i40u6k", "template_k98wdlc", this)
+                .then(() => {
+                    alert("Message sent successfully!");
+                })
+                .catch((error) => {
+                    console.error("EmailJS Error:", error);
+                    alert("Failed to send message. Please try again.");
+                });
+        });
     });
     </script>
+
 
 
 
