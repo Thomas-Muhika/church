@@ -71,29 +71,103 @@
         <!-- ***************************** -->
         <!-- PAGE NAVIGATION -->
         <!-- ***************************** -->
-        <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-landing fixed-top is-sticky" id="navbar">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/trph-logo.png" class="card-logo card-logo-dark" alt="logo dark" height="50">
                     <img src="assets/images/trph-logo.png" class="card-logo card-logo-light" alt="logo light" height="50">
                 </a>
-                <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="mdi mdi-menu"></i>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Top-right items: always visible on mobile -->
+                <div class="d-flex align-items-center d-lg-none">
+                    <!-- Resources dropdown (mobile) -->
+                    <div class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg p-0" aria-labelledby="resourcesDropdownMobile">
+                            <!-- Dropdown content same as desktop -->
+                            <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0 fw-semibold fs-15"> Resources </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="row g-0">
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="https://www.youtube.com/channel/UCQj13HtaPJMObnkGN6KzJkA" target="_blank">
+                                            <img src="assets/images/brands/livestream.png" alt="Live Stream">
+                                            <span>Live Stream</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="https://www.youtube.com/channel/UCQj13HtaPJMObnkGN6KzJkA" target="_blank">
+                                            <img src="assets/images/brands/youtube.png" alt="Youtube">
+                                            <span>Youtube</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="https://www.tiktok.com/@theredemptionpowerhouse" target="_blank">
+                                            <img src="assets/images/brands/tiktok.png" alt="Tiktok">
+                                            <span>Tiktok</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="https://www.instagram.com/trph_sanctuary" target="_blank">
+                                            <img src="assets/images/brands/instagram.png" alt="Instagram">
+                                            <span>Instagram</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="https://www.facebook.com/TheRedemptionPowerHouse.ke" target="_blank">
+                                            <img src="assets/images/brands/facebook.png" alt="Facebook">
+                                            <span>Facebook</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="https://www.instagram.com/trph_sanctuary" target="_blank">
+                                            <img src="assets/images/brands/gallery.png" alt="Gallery">
+                                            <span>Gallery</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Donate button (mobile) -->
+                    <a href="#" class="btn btn-primary giving-btn" data-bs-target=".bs-example-modal-xl" data-bs-toggle="modal" type="button">
+                        Giving
+                        <span class="star" style="left:5%; top:45%; animation-delay:0s;">✦</span>
+                        <span class="star" style="left:15%; top:30%; animation-delay:0.3s;">✧</span>
+                        <span class="star" style="left:25%; top:60%; animation-delay:0.7s;">✦</span>
+                        <span class="star" style="left:35%; top:40%; animation-delay:1.1s;">✧</span>
+                        <span class="star" style="left:45%; top:55%; animation-delay:1.4s;">✦</span>
+                    </a>
+
+                    <a href="index.html#contact" class="btn btn-success giving-btn ms-1" type="button">
+                        <i class="ri-phone-fill fs-14"></i>
+                    </a>
+                </div>
+
+                <!-- Full navbar menu for desktop -->
+                <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto-right mt-2 mt-lg-0" id="navbar-example">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#hero">Home</a>
+                            <a class="nav-link active" href="#hero">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdownDesktop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
                             </a>
-
-                            <div class="dropdown-menu dropdown-menu-lg p-0 dropdown-menu-end" data-bs-popper="static" aria-labelledby="resourcesDropdown">
-                                <!-- your dropdown content stays exactly the same -->
-
+                            <div class="dropdown-menu dropdown-menu-lg p-0 dropdown-menu-end">
+                                <!-- same dropdown content as mobile -->
                                 <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
                                     <div class="row align-items-center">
                                         <div class="col">
@@ -101,45 +175,43 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="p-2">
                                     <div class="row g-0">
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="https://www.youtube.com/channel/UCQj13HtaPJMObnkGN6KzJkA" target="_blank">
-                                                <img src="assets/images/brands/livestream.png" alt="Github">
+                                                <img src="assets/images/brands/livestream.png" alt="Live Stream">
                                                 <span>Live Stream</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="https://www.youtube.com/channel/UCQj13HtaPJMObnkGN6KzJkA" target="_blank">
-                                                <img src="assets/images/brands/youtube.png" alt="bitbucket">
+                                                <img src="assets/images/brands/youtube.png" alt="Youtube">
                                                 <span>Youtube</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="https://www.tiktok.com/@theredemptionpowerhouse" target="_blank">
-                                                <img src="assets/images/brands/tiktok.png" alt="dribbble">
+                                                <img src="assets/images/brands/tiktok.png" alt="Tiktok">
                                                 <span>Tiktok</span>
                                             </a>
                                         </div>
                                     </div>
-
-                                    <div class="row g-0">
+                                    <div class="row g-0 mt-2">
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="https://www.instagram.com/trph_sanctuary" target="_blank">
-                                                <img src="assets/images/brands/instagram.png" alt="dropbox">
+                                                <img src="assets/images/brands/instagram.png" alt="Instagram">
                                                 <span>Instagram</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="https://www.facebook.com/TheRedemptionPowerHouse.ke" target="_blank">
-                                                <img src="assets/images/brands/facebook.png" alt="mail_chimp">
+                                                <img src="assets/images/brands/facebook.png" alt="Facebook">
                                                 <span>Facebook</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="https://www.instagram.com/trph_sanctuary" target="_blank">
-                                                <img src="assets/images/brands/gallery.png" alt="slack">
+                                                <img src="assets/images/brands/gallery.png" alt="Gallery">
                                                 <span>Gallery</span>
                                             </a>
                                         </div>
@@ -147,22 +219,19 @@
                                 </div>
                             </div>
                         </li>
-
-
-
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#announcements">Announcements</a>
+                            <a class="nav-link" href="#announcements">Announcements</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                     </ul>
 
                     <div class="">
-                        <a href="index.html#contact" class="btn btn-link fw-medium text-decoration-none text-body contact-link">Get in Touch</a>
+                        <a href="#contact" class="btn btn-link fw-medium text-decoration-none text-body contact-link">Get in Touch</a>
                         <a href="#" class="btn btn-primary giving-btn" data-bs-target=".bs-example-modal-xl" data-bs-toggle="modal" type="button">
                             Giving
-                            <span class="star" style="left:5%;  top:45%; animation-delay:0s;">✦</span>
+                            <span class="star" style="left:5%; top:45%; animation-delay:0s;">✦</span>
                             <span class="star" style="left:15%; top:30%; animation-delay:0.3s;">✧</span>
                             <span class="star" style="left:25%; top:60%; animation-delay:0.7s;">✦</span>
                             <span class="star" style="left:35%; top:40%; animation-delay:1.1s;">✧</span>
