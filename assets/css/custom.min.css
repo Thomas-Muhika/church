@@ -34,6 +34,11 @@ NAVIGATION SECTION
     right: auto !important;
 }
 
+/* required for correct stacking */
+.nav-item.dropdown {
+    position: relative;
+}
+
 /* Target the mobile resources dropdown */
 #resourcesDropdownMobile + .dropdown-menu {
     min-width: 100px; /* adjust based on your icon+text size */
@@ -56,10 +61,7 @@ NAVIGATION SECTION
 }
 
 
-/* required for correct stacking */
-.nav-item.dropdown {
-    position: relative;
-}
+
 
 
 
