@@ -1734,7 +1734,7 @@
                     <!-- end col -->
                     <div class="col-lg-8">
                         <div>
-                            <form>
+                            <form id="contactForm">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="mb-4">
@@ -2127,6 +2127,28 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <!-- Email JS contact form -->
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script>
+    (function() {
+        emailjs.init("O0jUabZeTi_zJx9LW"); // Replace with your Public Key
+    })();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // Stop page refresh
+
+        emailjs.sendForm("service_6i40u6k", "template_k98wdlc", this)
+            .then(function() {
+                alert("Message sent successfully!");
+            }, function(error) {
+                console.log(error);
+                alert("Failed to send message. Please try again.");
+            });
+    });
+    </script>
+
+
 
 
 </body>
