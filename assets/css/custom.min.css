@@ -49,6 +49,12 @@ NAVIGATION SECTION
     padding: 0.5rem;
 }
 
+#aboutDropdownMobile + .dropdown-menu {
+    right: 0 !important;   /* align to left edge of viewport */
+    left: auto !important;
+    min-width: 150px;     /* optional: minimum width for dropdown */
+}
+
 
 /* required for correct stacking */
 .nav-item.dropdown {
